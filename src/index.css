@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Tangerine:wght@400;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .font-serif {
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .font-pergamena {
+    font-family: 'Cormorant Garamond', serif;
+  }
+  
+  .font-calligraphy {
+    font-family: 'Tangerine', cursive;
+  }
+  
+  :root {
+    --cream-50: #fefdfb;
+    --cream-100: #fdf9f3;
+    --cream-200: #faf2e7;
+    --cream-300: #f6e8d5;
+    --cream-400: #f0d9c0;
+    --cream-500: #e8c7a6;
+    --cream-600: #ddb088;
+    --cream-700: #cd9668;
+    --cream-800: #b87d4d;
+    --cream-900: #9a6b3f;
+    
+    --champagne-50: #fefcf9;
+    --champagne-100: #fdf7f0;
+    --champagne-200: #faeee0;
+    --champagne-300: #f6e0c7;
+    --champagne-400: #f0cca3;
+    --champagne-500: #e8b47d;
+    --champagne-600: #dd9d5a;
+    --champagne-700: #c8834a;
+    --champagne-800: #a66d3e;
+    --champagne-900: #8b5a35;
+  }
+}
+
+@layer components {
+  .bg-cream-50 { background-color: var(--cream-50); }
+  .bg-cream-100 { background-color: var(--cream-100); }
+  .bg-cream-200 { background-color: var(--cream-200); }
+  .bg-cream-300 { background-color: var(--cream-300); }
+  .bg-cream-900 { background-color: var(--cream-900); }
+  
+  .bg-champagne-50 { background-color: var(--champagne-50); }
+  .bg-champagne-100 { background-color: var(--champagne-100); }
+  .bg-champagne-200 { background-color: var(--champagne-200); }
+  .bg-champagne-300 { background-color: var(--champagne-300); }
+  .bg-champagne-400 { background-color: var(--champagne-400); }
+  .bg-champagne-500 { background-color: var(--champagne-500); }
+  .bg-champagne-600 { background-color: var(--champagne-600); }
+  .bg-champagne-700 { background-color: var(--champagne-700); }
+  .bg-champagne-800 { background-color: var(--champagne-800); }
+  .bg-champagne-900 { background-color: var(--champagne-900); }
+  
+  .text-cream-50 { color: var(--cream-50); }
+  .text-cream-100 { color: var(--cream-100); }
+  .text-cream-200 { color: var(--cream-200); }
+  
+  .text-champagne-200 { color: var(--champagne-200); }
+  .text-champagne-300 { color: var(--champagne-300); }
+  .text-champagne-400 { color: var(--champagne-400); }
+  .text-champagne-500 { color: var(--champagne-500); }
+  .text-champagne-600 { color: var(--champagne-600); }
+  .text-champagne-700 { color: var(--champagne-700); }
+  .text-champagne-800 { color: var(--champagne-800); }
+  
+  .border-cream-100 { border-color: var(--cream-100); }
+  .border-cream-200 { border-color: var(--cream-200); }
+  .border-champagne-200 { border-color: var(--champagne-200); }
+  .border-champagne-300 { border-color: var(--champagne-300); }
+  .border-champagne-400 { border-color: var(--champagne-400); }
+  
+  .from-cream-50 { --tw-gradient-from: var(--cream-50); }
+  .from-cream-100 { --tw-gradient-from: var(--cream-100); }
+  .from-cream-200 { --tw-gradient-from: var(--cream-200); }
+  .from-cream-300 { --tw-gradient-from: var(--cream-300); }
+  .from-cream-900 { --tw-gradient-from: var(--cream-900); }
+  
+  .from-champagne-100 { --tw-gradient-from: var(--champagne-100); }
+  .from-champagne-200 { --tw-gradient-from: var(--champagne-200); }
+  .from-champagne-500 { --tw-gradient-from: var(--champagne-500); }
+  .from-champagne-600 { --tw-gradient-from: var(--champagne-600); }
+  .from-champagne-800 { --tw-gradient-from: var(--champagne-800); }
+  .from-champagne-900 { --tw-gradient-from: var(--champagne-900); }
+  
+  .to-cream-100 { --tw-gradient-to: var(--cream-100); }
+  .to-cream-200 { --tw-gradient-to: var(--cream-200); }
+  .to-cream-900 { --tw-gradient-to: var(--cream-900); }
+  
+  .to-champagne-50 { --tw-gradient-to: var(--champagne-50); }
+  .to-champagne-100 { --tw-gradient-to: var(--champagne-100); }
+  .to-champagne-600 { --tw-gradient-to: var(--champagne-600); }
+  .to-champagne-700 { --tw-gradient-to: var(--champagne-700); }
+  .to-champagne-900 { --tw-gradient-to: var(--champagne-900); }
+  
+  .via-cream-200 { --tw-gradient-via: var(--cream-200); }
+  .via-cream-900 { --tw-gradient-via: var(--cream-900); }
+  .via-champagne-200 { --tw-gradient-via: var(--champagne-200); }
+  .via-champagne-400 { --tw-gradient-via: var(--champagne-400); }
+  .via-champagne-900 { --tw-gradient-via: var(--champagne-900); }
+}
+
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--cream-100);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--champagne-400);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--champagne-500);
+}
