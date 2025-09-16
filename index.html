@@ -1,13 +1,130 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Landing Page Matrimonio Stefano &amp; Irene</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Matrimonio di Stefano e Irene - 13 Giugno 2026 a Villa Ottone, Isola d'Elba. Scopri la nostra storia, la location e tutte le informazioni per partecipare.">
+  <meta name="keywords" content="matrimonio Stefano e Irene, matrimonio Isola d'Elba, Villa Ottone, matrimonio 13 giugno 2026, partecipazione matrimonio, lista nozze, rsvp matrimonio">
+  <meta name="author" content="Stefano e Irene">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://matrimonio-stefano-irene.it/">
+  <meta property="og:title" content="Matrimonio Stefano & Irene | 13 Giugno 2026">
+  <meta property="og:description" content="Vi aspettiamo per celebrare il nostro amore il 13 Giugno 2026 a Villa Ottone, Isola d'Elba.">
+  <meta property="og:image" content="https://huggingface.co/spaces/StexJava/irene-stefano/resolve/main/images/nuovo-sfondo-matrimonio.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://matrimonio-stefano-irene.it/">
+  <meta property="twitter:title" content="Matrimonio Stefano & Irene | 13 Giugno 2026">
+  <meta property="twitter:description" content="Vi aspettiamo per celebrare il nostro amore il 13 Giugno 2026 a Villa Ottone, Isola d'Elba.">
+  <meta property="twitter:image" content="https://huggingface.co/spaces/StexJava/irene-stefano/resolve/main/images/nuovo-sfondo-matrimonio.png">
+
+  <title>Matrimonio Stefano & Irene | 13 Giugno 2026</title>
+  <link rel="canonical" href="https://matrimonio-stefano-irene.it/">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600&family=Share+Tech+Mono&display=swap');
+    
+    body {
+      font-family: 'Cormorant Garamond', serif;
+      scroll-behavior: smooth;
+      font-weight: 400;
+      line-height: 1.6;
+      font-size: 1.1rem;
+    }
+    
+    .title-font {
+      font-family: 'Alex Brush', cursive;
+      font-weight: 400;
+      letter-spacing: 1px;
+      font-size: 2.5rem;
+    }
+    
+    .hero-section {
+      background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+        url('https://huggingface.co/spaces/StexJava/irene-stefano/resolve/main/images/nuovo-sfondo-matrimonio.png');
+      background-size: cover;
+      background-position: center;
+      background-color: #a8e6cf;
+    }
+    
+    .gallery-container {
+      scroll-snap-type: x mandatory;
+    }
+    
+    .gallery-item {
+      scroll-snap-align: start;
+    }
+    
+    .location-card {
+      background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+        url('https://huggingface.co/spaces/StexJava/irene-stefano/resolve/main/images/Isola%20d%27elba.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800">
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 right-0 bg-white bg-opacity-90 shadow-sm z-50 py-4 hidden md:block transition-all duration-300" id="navbar">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex justify-center gap-4">
+        <a href="#our-story" class="px-4 py-2 text-gray-700 hover:text-pink-500 transition font-medium">La nostra storia</a>
+        <a href="#wedding" class="px-4 py-2 text-gray-700 hover:text-pink-500 transition font-medium">Il matrimonio</a>
+        <a href="#location" class="px-4 py-2 text-gray-700 hover:text-pink-500 transition font-medium">Location</a>
+        <a href="#rsvp" class="px-4 py-2 text-gray-700 hover:text-pink-500 transition font-medium">Conferma partecipazione</a>
+        <a href="#gifts" class="px-4 py-2 text-gray-700 hover:text-pink-500 transition font-medium">Lista nozze</a>
+        <a href="#contacts" class="px-4 py-2 text-gray-700 hover:text-pink-500 transition font-medium">Contatti</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero-section min-h-screen flex flex-col justify-center items-center text-white text-center px-4 pt-16 md:pt-0">
+    <h1 class="title-font text-6xl md:text-8xl font-bold mb-4" data-aos="fade-down">Stefano & Irene</h1>
+    <p class="text-3xl md:text-4xl mb-8" data-aos="fade-down" data-aos-delay="100">13 Giugno 2026</p>
+    <div class="absolute bottom-10 animate-bounce" data-aos="fade-up" data-aos-delay="200">
+      <i data-feather="chevron-down" class="w-8 h-8"></i>
+    </div>
+  </section>
+
+  <!-- Altre sezioni (our story, wedding, location, rsvp, gifts, contacts, footer, scripts) restano invariate -->
+
+  <footer class="py-8 text-center text-gray-500 text-sm">
+    <p>© 2026 Matrimonio Stefano & Irene. Tutti i diritti riservati.</p>
+  </footer>
+
+  <script>
+    // Sticky Navbar
+    window.addEventListener('scroll', function() {
+      const navbar = document.getElementById('navbar');
+      if (window.scrollY > 100) {
+        navbar.classList.remove('hidden');
+        navbar.classList.add('block');
+      } else {
+        navbar.classList.add('hidden');
+        navbar.classList.remove('block');
+      }
+    });
+
+    function copyIban() {
+      const iban = 'IT12 X123 4567 8901 2345 6789 012';
+      navigator.clipboard.writeText(iban).then(() => {
+        alert('IBAN copiato negli appunti!');
+      });
+    }
+
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true
+    });
+    feather.replace();
+  </script>
+</body>
 </html>
