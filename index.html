@@ -5,14 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Matrimonio di Irene & Stefano - 13 Giugno 2026 all'Isola d'Elba. Scopri la nostra storia e tutte le informazioni per partecipare a questo giorno speciale.">
     
-    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://matrimonio-stefano-irene.it/">
     <meta property="og:title" content="Matrimonio Stefano & Irene | 13 Giugno 2026">
     <meta property="og:description" content="Vi aspettiamo per celebrare il nostro amore il 13 Giugno 2026 a Villa Ottone, Isola d'Elba.">
     <meta property="og:image" content="/images/nuovo-sfondo-matrimonio.png">
 
-    <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://matrimonio-stefano-irene.it/">
     <meta property="twitter:title" content="Matrimonio Stefano & Irene | 13 Giugno 2026">
@@ -61,24 +59,27 @@
             background-size: cover;
             background-position: center;
         }
+
+        /* Nuovo stile per la sezione Alloggio */
+        .accommodation-section {
+            background-color: #f7f7f7; /* Colore chiaro per contrasto */
+        }
     </style>
 </head>
 <body class="bg-white text-gray-800">
-    <!-- Sticky Navbar -->
     <nav class="fixed top-0 left-0 right-0 bg-white bg-opacity-90 shadow-sm z-50 py-4 hidden md:block transition-all duration-300" id="navbar">
         <div class="max-w-6xl mx-auto px-4">
             <div class="flex justify-center gap-4">
                 <a href="#our-story" class="px-4 py-2 text-gray-700 hover:text-pink-500 transition font-medium">La Nostra Storia</a>
                 <a href="#wedding" class="px-4 py-2 text-gray-700 hover:text-pink-500 transition font-medium">Il Matrimonio</a>
                 <a href="#location" class="px-4 py-2 text-gray-700 hover:text-pink-500 transition font-medium">Location</a>
-                <a href="#rsvp" class="px-4 py-2 text-gray-700 hover:text-pink-500 transition font-medium">Conferma Partecipazione</a>
+                <a href="#accommodation" class="px-4 py-2 text-gray-700 hover:text-pink-500 transition font-medium">Alloggio</a> <a href="#rsvp" class="px-4 py-2 text-gray-700 hover:text-pink-500 transition font-medium">Conferma Partecipazione</a>
                 <a href="#gifts" class="px-4 py-2 text-gray-700 hover:text-pink-500 transition font-medium">Lista Nozze</a>
                 <a href="#contacts" class="px-4 py-2 text-gray-700 hover:text-pink-500 transition font-medium">Contatti</a>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section class="hero-section min-h-screen flex flex-col justify-center items-center text-white text-center px-4 pt-16 md:pt-0">
         <h1 class="title-font text-6xl md:text-8xl font-bold mb-4" data-aos="fade-down">Stefano & Irene</h1>
         <p class="text-3xl md:text-4xl mb-8" data-aos="fade-down" data-aos-delay="100">13 Giugno 2026</p>
@@ -87,7 +88,6 @@
         </div>
     </section>
 
-    <!-- Our Story Section -->
     <section id="our-story" class="py-20 px-4 max-w-6xl mx-auto">
         <div class="text-center mb-16">
             <h2 class="title-font text-5xl md:text-6xl mb-4" data-aos="fade-up">La nostra storia d'amore</h2>
@@ -96,7 +96,6 @@
             </p>
         </div>
 
-        <!-- Photo Mosaic -->
         <div class="max-w-6xl mx-auto">
             <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
                 <div class="relative aspect-square" data-aos="zoom-in">
@@ -127,7 +126,6 @@
         </div>
     </section>
 
-    <!-- Video Section -->
     <section class="py-20 px-4" style="background-color: #dcedc1;">
     <div class="max-w-4xl mx-auto text-center">
         <h2 class="title-font text-5xl md:text-6xl mb-8" data-aos="fade-up">Il nostro video</h2>
@@ -142,12 +140,11 @@
         </div>
     </section>
     
-    <!-- Wedding Details -->
     <section id="wedding" class="py-20 px-4 max-w-6xl mx-auto">
         <div class="text-center mb-16">
             <h2 class="title-font text-5xl md:text-6xl mb-4" data-aos="fade-up">Il nostro matrimonio</h2>
             <p class="max-w-2xl mx-auto text-xl md:text-2xl" data-aos="fade-up" data-aos-delay="100">
-               Il nostro matrimonio verrà celebrato con rito civile il <span class="font-bold">13 giugno 2026</span>. Save the date!
+                Il nostro matrimonio verrà celebrato con rito civile il <span class="font-bold">13 giugno 2026</span>. Save the date!
             </p>
         </div>
 
@@ -164,7 +161,6 @@
         </div>
     </section>
 
-    <!-- Location Section -->
     <section id="location" class="py-20">
         <div class="location-card min-h-[500px] flex items-center justify-center text-white text-center px-4">
             <div class="max-w-4xl mx-auto">
@@ -186,7 +182,21 @@
         </div>
     </section>
 
-    <!-- Couple Section with Countdown -->
+    <section id="accommodation" class="accommodation-section py-20 px-4 max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="title-font text-5xl md:text-6xl mb-4" data-aos="fade-up">Dove Dormire</h2>
+            <p class="max-w-3xl mx-auto text-xl md:text-2xl mb-8" data-aos="fade-up" data-aos-delay="100">
+                L'Isola d'Elba offre diverse soluzioni per l'alloggio. Per aiutarvi nella scelta, abbiamo raccolto tutte le informazioni utili e i nostri suggerimenti in un comodo documento PDF.
+            </p>
+            <a href="/documents/alloggi_matrimonio_stefano_irene.pdf" target="_blank" download class="inline-flex items-center px-8 py-4 bg-pink-500 text-white text-lg rounded-full font-bold hover:bg-pink-600 transition shadow-lg" data-aos="zoom-in" data-aos-delay="200">
+                <i data-feather="download-cloud" class="mr-3 w-6 h-6"></i> Scarica le Opzioni Alloggio (PDF)
+            </a>
+            <p class="mt-8 text-lg italic text-gray-600" data-aos="fade-up" data-aos-delay="300">
+                Vi consigliamo di prenotare il prima possibile, trattandosi di alta stagione.
+            </p>
+        </div>
+    </section>
+
     <section id="rsvp" class="py-20 px-4" style="background-color: #a8e6cf;">
         <div class="max-w-4xl mx-auto text-center">
             <h2 class="title-font text-6xl md:text-7xl mb-4" data-aos="fade-up">Stefano & Irene</h2>
@@ -278,12 +288,11 @@
         updateCountdown();
     </script>
 
-    <!-- Gift Section -->
     <section id="gifts" class="py-20 px-4" style="background-color: #dcedc1;">
         <div class="max-w-4xl mx-auto text-center">
             <h2 class="title-font text-5xl md:text-6xl mb-8" data-aos="fade-up">Lista Nozze</h2>
             <p class="mb-8 max-w-2xl mx-auto text-xl md:text-2xl" data-aos="fade-up" data-aos-delay="100">
-                Grazie per essere parte delle nostre vite e per tutto l’affetto e il supporto. Da oggi, la nostra nave salperà per un viaggio molto lungo e molto lontano, la nostra vita insieme. Quindi, siamo pronti a issare le vele e affrontare qualsiasi vento il Caso ci riserverà.  Se vorrete contribuire a rendere più speciale qualche tappa del nostro itinerario, ecco a voi le coordinate bancarie.
+                Grazie per essere parte delle nostre vite e per tutto l’affetto e il supporto. Da oggi, la nostra nave salperà per un viaggio molto lungo e molto lontano, la nostra vita insieme. Quindi, siamo pronti a issare le vele e affrontare qualsiasi vento il Caso ci riserverà.  Se vorrete contribuire a rendere più speciale qualche tappa del nostro itinerario, ecco a voi le coordinate bancarie.
             </p>
             
             <div class="bg-white p-8 rounded-xl shadow-md max-w-md mx-auto" data-aos="zoom-in">
@@ -317,7 +326,6 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contacts" class="py-20 px-4" style="background-color: #a8e6cf;">
         <div class="max-w-4xl mx-auto text-center">
             <h2 class="title-font text-5xl md:text-6xl mb-8" data-aos="fade-up">Contatti</h2>
@@ -326,7 +334,6 @@
             </p>
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
-                <!-- Stefano -->
                 <div class="bg-white p-6 rounded-xl shadow-md" data-aos="fade-right">
                     <h3 class="title-font text-3xl mb-4">Stefano</h3>
                     <div class="space-y-3">
@@ -339,7 +346,6 @@
                     </div>
                 </div>
                 
-                <!-- Irene -->
                 <div class="bg-white p-6 rounded-xl shadow-md" data-aos="fade-left">
                     <h3 class="title-font text-3xl mb-4">Irene</h3>
                     <div class="space-y-3">
